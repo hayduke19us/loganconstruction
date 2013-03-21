@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require galleria-1.2.9.js
+//= require galleria.classic.js
 //= require_tree .
