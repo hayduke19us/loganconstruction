@@ -2,18 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com
 
-.navbar .brand { color: #00CCFF;
+.navbar .brand { color: #FFF;
 								 font-size: 200%;
-								
 }
-
-.span3 {padding-top: 7%;}
 
 .hero-unit {margin-top: 3%;}
 
-.span9 { margin-top: 5%}
+body{ background-color: black;}
+
+.navbar .btn {float: right;}
 
 
 
-body { height: 900px;}
+
+
 

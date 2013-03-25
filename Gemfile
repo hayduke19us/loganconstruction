@@ -22,8 +22,7 @@ end
 
 gem 'jquery-rails'
 
-# flickr
-gem 'rambling-slider-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

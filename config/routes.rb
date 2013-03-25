@@ -4,6 +4,8 @@ Logan::Application.routes.draw do
   get "home/experience"
   get "home/contacts"
   get "home/job_estimates"
+  
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

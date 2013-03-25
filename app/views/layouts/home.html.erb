@@ -49,36 +49,30 @@
           <div class="container-fluid nav-collapse">
             <ul class="nav">
               <li><%= link_to "About Us", "about"  %></li>
-              <li><%= link_to "Our Experience", "experience"  %></li>
-              <li><%= link_to "Contact", "/path3"  %></li>
-            </ul>
+              <li><%= link_to "Contact", "contact"  %></li>
+							<li><%= link_to "Job Estimates", "job" %><li>
+							<li class="btn btn-primary">Sign in with Facebook</li>
+						</ul>
+							
           </div><!--/.nav-collapse -->
+         
          
         </div>
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header"></li>
- 						  <li><%= link_to "Gallery", "/path1"  %></li>
-              <li><%= link_to "Job Estimates", "/path2"  %></li>
-              <li><%= link_to "Contact", "/path3"  %></li>
-              <li class= "btn  btn-primary">Sign in with Facebook</li>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span9">
+
+  
+
+       <div class="container-fluid">
           <%= bootstrap_flash %>
           <%= yield %>
-        </div>
+			 </div>
+    
         	
 	     
 				
-      </div><!--/row-->
+
       
 	    
 	    
