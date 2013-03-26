@@ -10,7 +10,7 @@
  *
  *= require_self
  *= require_tree .
- *= require galleria.classic
+ *= require galleria.classic.css.scss
  *= require bootstrap_and_overrides
  *= require bootstrap-responsive.css
  */

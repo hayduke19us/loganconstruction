@@ -5,14 +5,24 @@
 .lead { color: rgb(135,135,135);}
 
 body .galleria-container{ background:#fff; }
-h1 {float:left;}
+
+h2, a:hover {text-decoration:none;
+             color:rgb(234,234,234);}
+
+h2, a {float:left;
+       color:#FFFFFF;
+       text-decoration: none;
+    
+        }
+.hero-unit {margin-top: 20%;}
+
 
 .arrow_box {
 	position: relative;
-	background: #88b7d5;
-	border: 1px solid #c2e1f5;
+	background: #0066CC;
+	border: 3px solid rgb(234,234,234);
 	padding: 10px;
-	margin-left:11%;
+  margin-left:15%;
 }
 .arrow_box:after, .arrow_box:before {
 	left: 100%;
@@ -26,7 +36,7 @@ h1 {float:left;}
 
 .arrow_box:after {
 	border-color: rgba(136, 183, 213, 0);
-	border-left-color: #88b7d5;
+	border-left-color: #0066CC;
 	border-width: 30px;
 	top: 50%;
 	margin-top: -30px;

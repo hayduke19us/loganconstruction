@@ -5,6 +5,10 @@ class HomeController < ApplicationController
   end
   def contacts
   end
-  def job_estimates
+  def job
+  end
+  def sign_in
+  end
+  def gallery
   end
 end

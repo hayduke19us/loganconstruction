@@ -1,8 +1,9 @@
 Logan::Application.routes.draw do
-     match 'home/contacts' => 'home#contacts', :as => :contacts
-     get 'home/index'
-     get 'home/about'
-   
+     match 'contacts' => 'home#contacts', :as => :contacts
+     match 'about' => 'home#about', :as => :about
+     match 'job' => 'home#job', :as => :job
+     match 'sign_in' => 'home#sign_in', :as => :sign_in
+     match 'gallery' => 'home#gallery', :as => :gallery   
   
  
 
