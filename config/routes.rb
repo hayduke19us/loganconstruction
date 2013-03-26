@@ -1,10 +1,10 @@
 Logan::Application.routes.draw do
-  get "home/index"
-  get "home/about"
-  get "home/experience"
-  get "home/contacts"
-  get "home/job_estimates"
+     match 'home/contacts' => 'home#contacts', :as => :contacts
+     get 'home/index'
+     get 'home/about'
+   
   
+ 
 
 
   # The priority is based upon order of creation:

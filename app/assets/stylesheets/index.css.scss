@@ -1,2 +1,40 @@
-#galleria{ width: auto; height: 600px; background:transparent;}
-.pic_show {margin-top: 3.5%;}
+#galleria{ width: auto; height: 500px; background:white;}
+
+.pic_show { margin-top: 3.5%;}
+
+.lead { color: rgb(135,135,135);}
+
+body .galleria-container{ background:#fff; }
+h1 {float:left;}
+
+.arrow_box {
+	position: relative;
+	background: #88b7d5;
+	border: 1px solid #c2e1f5;
+	padding: 10px;
+	margin-left:11%;
+}
+.arrow_box:after, .arrow_box:before {
+	left: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #88b7d5;
+	border-width: 30px;
+	top: 50%;
+	margin-top: -30px;
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-left-color: #c2e1f5;
+	border-width: 36px;
+	top: 50%;
+	margin-top: -36px;
+}
