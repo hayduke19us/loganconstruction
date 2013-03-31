@@ -1,10 +1,15 @@
+
+.intro { margin-top: 8%;}
+
 #galleria{ width: auto; height: 500px; background:white;}
 
 .pic_show { margin-top: 3.5%;}
 
 .lead { color: rgb(135,135,135);}
 
-body .galleria-container{ background:#fff; }
+body .galleria-container{ background: white; 
+                           border: none;}
+
 
 h2, a:hover {text-decoration:none;
              color:rgb(234,234,234);}
@@ -14,7 +19,9 @@ h2, a {float:left;
        text-decoration: none;
     
         }
-.hero-unit {margin-top: 20%;}
+.qualities{margin-top: 20%;
+           padding: 5%;}
+li  {padding: 5px;}
 
 
 .arrow_box {
@@ -23,6 +30,7 @@ h2, a {float:left;
 	border: 3px solid rgb(234,234,234);
 	padding: 10px;
   margin-left:15%;
+  margin-top: 15%;
 }
 .arrow_box:after, .arrow_box:before {
 	left: 100%;

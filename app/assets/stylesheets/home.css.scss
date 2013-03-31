@@ -2,17 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com
 
-.navbar-inverse .brand {color: #FFFFFF;
+.navbar.brand {color: #FFFFFF;
 								       font-size: 200%;
 }
 
-.hero-unit {margin-top: 3%;}
+.navbar {background-color: #0066CC;}
 
-body{ background-color: none;}
+
 
 .navbar .btn {float: right;}
 
-.navbar  {background: black;}
+
 
 .navbar-inverse .nav > li {color:#E5E5E5;}
 
@@ -23,6 +23,8 @@ footer {margin-left: 3%;
 .about{margin-top:5%;}
 .contact{margin-top:5%;}
 .sign_in{margin-top:5%}
+
+
 
 
 
