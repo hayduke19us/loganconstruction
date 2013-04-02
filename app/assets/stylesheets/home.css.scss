@@ -3,21 +3,28 @@
 // You can use Sass (SCSS) here: http://sass-lang.com
 
 .navbar.brand {color: #FFFFFF;
-								       font-size: 200%;
+								      font-size: 200%;
+								      margin-top: 13px;
 }
 
+.brand {;}
 .navbar {background-color: #0066CC;}
-
-
-
-.navbar .btn {float: right;}
-
 
 
 .navbar-inverse .nav > li {color:#E5E5E5;}
 
-footer {margin-left: 3%;
-        color: #E5E5E5;}
+.notice {padding-top:5%;}
+
+.alert.fade.in.alert-success { background-color: rgb(234,234,234);
+                               border-color: black;
+                               color: black;}
+
+#current_user { margin-top: 0px;
+							}
+							
+ul.nav li {;}
+
+h3#current_user { float:right;}
 
 .job{margin-top:5%;}
 .about{margin-top:5%;}

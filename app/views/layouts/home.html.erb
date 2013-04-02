@@ -48,16 +48,16 @@
           <a class="brand" <%= link_to "Logan Construction", root_path %></a>
           <div class="container-fluid nav-collapse">
             <ul class="nav">
-	            
-              <li id="about"><%= link_to "About Us", "about"  %></li>
+	            <li id="about"><%= link_to "About Us", "about"  %></li>
               <li id="contact"><%= link_to "Contact", "contacts"  %></li>
 							<li id="job"><%= link_to "Job Estimates", "job" %><li>
-							<li id="sign_in"><%= link_to "Sign in", "sign_in" %></li>
-							<div class="hidden-tablet hidden-desktop ">
-								<li id="gallery"><%= link_to "Gallery", "gallery"%></li>
-							</div>	
-							
-						</ul>
+							<li id="gallery"><%= link_to "Gallery", "gallery"%></li>
+				  	</ul>
+							<h3 id= "current_user", class='hidden-phone', 'hidden-table'><% if current_user%>
+						  <%= current_user.name %> <%=link_to 'signout', 'signout'%>
+							<% else %>
+							<%= link_to "sign in with Facebook", "/auth/facebook"%>
+							<%end%></li></h3>
 							
           </div><!--/.nav-collapse -->
          
@@ -70,22 +70,16 @@
   
 
        <div class="container-fluid">
-          <%= bootstrap_flash %>
-          <%= yield %>
+	      <div class="notice">
+         <%= bootstrap_flash %>
+        </div>
+         <%= yield %>
 			 </div>
-    
-        	
-	     
-				
-
-      
-	    
-	    
-
-      <footer>
-        <p>&copy; Sullivan Designs</p>
-      </footer>
-
+	
+   
+	      
+     
+	
     </div> <!-- /container -->
 
     <!-- Javascripts
@@ -93,7 +87,11 @@
     <!-- Placed at the end of the document so the pages load faster -->
     
 		
-    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "application"%>
+    
 
   </body>
+
+
+
 </html>
