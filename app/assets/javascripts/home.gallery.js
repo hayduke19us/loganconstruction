@@ -16,3 +16,4 @@
 //= require galleria.classic
 //= require galleria.picasa
 //= require gallery
+//= bootstrap

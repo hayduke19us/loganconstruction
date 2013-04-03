@@ -2,29 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com
 
-.navbar.brand {color: #FFFFFF;
-								      font-size: 200%;
-								      margin-top: 13px;
-}
+.dropdown{float:right;
+          margin-right: 8%;}
 
-.brand {;}
-.navbar {background-color: #0066CC;}
+.navbar-inverse .brand  {color:white;}
+
 
 
 .navbar-inverse .nav > li {color:#E5E5E5;}
 
 .notice {padding-top:5%;}
 
-.alert.fade.in.alert-success { background-color: rgb(234,234,234);
-                               border-color: black;
-                               color: black;}
+.alert.fade.in.alert-success { background-color:white;
+                               border-color: white;
+															 margin-left:1%;
+                               
+                               color: rgb(135,135,135);
+                               width: 600px;
+                               }
 
-#current_user { margin-top: 0px;
-							}
+
 							
 ul.nav li {;}
 
-h3#current_user { float:right;}
+
 
 .job{margin-top:5%;}
 .about{margin-top:5%;}
