@@ -4,7 +4,7 @@ Logan::Application.routes.draw do
      match 'job' => 'home#job', :as => :job
      match 'sign_in' => 'home#sign_in', :as => :sign_in
      match 'gallery' => 'home#gallery', :as => :gallery
-     match 'auth/facebook/callback' => 'sessions#create'
+     match '/auth/:provider/callback' => 'sessions#create'
      match '/signout' => "sessions#destroy", :as => :signout
 
   

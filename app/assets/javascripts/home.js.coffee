@@ -1,4 +1,5 @@
-$('.alert').delay('4000').slideUp('3000');
+$('.alert.fade.in.alert-success').slideDown({'10000', 'easeInCubic'}).delay('5000');
+$('.alert').slideUp({'10000', 'easeInCubic'});
 
 
 	

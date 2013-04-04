@@ -57,13 +57,16 @@
 
 							  <div class=  "dropdown">
 									  <% if current_user%>
-									  <%= current_user.name %> <%=link_to 'signout', 'signout'%>
+									 <h4 id="user-name"><%= current_user.name %> <%=link_to 'signout', 'signout'%></h4>
 										<% else %>
 							  <a class="dropdown-toggle btn" data-toggle="dropdown" data-target="dropdown-menu">Sign in</a>
 										<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 									    <li><%=link_to "Facebook", "/auth/facebook"%></li>
-									    <li><%=link_to "Twitter"%></li>
-									    <li><%=link_to "Google +"%></li>
+									    <li><%=link_to "Twitter", "/auth/twitter"%></li>
+									    <li><%=link_to "Google", "/auth/google"%></li>
+									    <li><%=link_to "Create an account", "/auth/identity"%></li>
+									    <li><%=link_to "Login", "/auth/identity/register"%></li>
+									    
 									  </ul>
 								</div>
 							<%end%>

@@ -21,10 +21,16 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
-gem 'omniauth-facebook'
-
 gem 'mailcatcher'
+
+
+gem 'devise'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+gem 'omniauth-google'
+gem 'omniauth-identity'
+
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
