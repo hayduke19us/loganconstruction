@@ -1,0 +1,52 @@
+<%=stylesheet_link_tag "home.contact.css"%>
+
+
+
+	 
+		<div class="span7">
+			<div class="well" id= "contact-form">
+				
+				  <%= form_for(@customer) do |f| %>
+				  <% if @customer.errors.any? %>
+				    <div id="error_explanation">
+				      <h2><%= pluralize(@customer.errors.count, "error") %> prohibited this customer from being saved:</h2>
+              <ul>
+				      <% @customer.errors.full_messages.each do |msg| %>
+				        <li><%= msg %></li>
+				      <% end %>
+				      </ul>
+				    </div>
+				  <% end %>
+          <div class="field">
+				    <div class="lead">
+					  Name:
+					  </div>
+				    <%= f.text_field :name, :placeholder => "Montropolis Certitude" %>
+				  </div>
+				  <div class="field">
+				    <div class="lead">
+					  Email:
+					  </div>
+				    <%= f.text_field :email, :placeholder => "email@provider.com" %>
+				  </div>
+				  <div class="text-area">
+					  <div class="lead">
+						A quick and descriptive note:
+						</div>
+					  <%= f.text_area :description%>
+					</div>
+				  <div class="actions">
+				    <%=f.submit "Send"%>
+				  </div>
+				<% end %>
+			
+		  </div>
+		</div>
+		<div class="span5 hidden-phone hidden-tablet">
+    <h1> We promise to get back to you as soon as possible.
+	       Be specific if it concerns square footage please.
+	  </h1>
+    </div>
+		  
+		
+

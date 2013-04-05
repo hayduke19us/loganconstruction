@@ -1,5 +1,9 @@
 Logan::Application.routes.draw do
-     match 'contacts' => 'home#contacts', :as => :contacts
+    
+   
+     get '/customers/contacts'
+     resources :customers
+     match 'contacts' => 'customers#contacts', :as => :contacts
      match 'about' => 'home#about', :as => :about
      match 'job' => 'home#job', :as => :job
      match 'sign_in' => 'home#sign_in', :as => :sign_in
