@@ -1,6 +1,6 @@
 Logan::Application.routes.draw do
     
-   
+     get '/home/index'
      get '/customers/contacts'
      resources :customers
      match 'contacts' => 'customers#contacts', :as => :contacts
