@@ -28,7 +28,7 @@ gem 'jquery-rails'
 gem 'mailcatcher'
 
 
-gem 'devise'
+
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 gem 'omniauth-google'
