@@ -10,7 +10,7 @@ end
 group :development, :test do
   gem 'sqlite3'
 end
-gem 'heroku'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
