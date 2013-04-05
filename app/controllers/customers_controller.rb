@@ -6,7 +6,7 @@ class CustomersController < ApplicationController
     @customer = Customer.new(params[:customer])
     if @customer.save
         CustomerMailer.contact_logan(@customer).deliver
-        redirect_to root_url, notice: "<h3>Your e-mail was sent!</h3>" 
+        redirect_to "/home/index", notice: "<h3>Your e-mail was sent!</h3>" 
     end
   end
 end
