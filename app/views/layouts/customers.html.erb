@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
     <title><%= content_for?(:title) ? yield(:title) : "Logan Construction" %></title>
     <%= csrf_meta_tags %>
    
@@ -49,23 +49,36 @@
 		          <div class="container-fluid nav-collapse">
 		            <ul class="nav">
 			            <li id="about"><%= link_to "About Us", :about  %></li>
-		              <li id="contact"><%= link_to "Contact", :contacts  %></li>
+		              <li id="contact"><%= link_to "Contact", "/customers/contacts"  %></li>
 									<li id="job"><%= link_to "Job Estimates", :job %><li>
-									<li id="gallery"><%= link_to "Gallery", :gallery%></li>
-						  	</ul>
-
+									<li id="gallery"><%= link_to "Gallery", :gallery %></li>
+								</ul>
+								<ul class="hidden-desktop">
+							  	<% if current_user%>
+									<h4 id="user-name"><%= current_user.name %> <%=link_to 'signout', :signout%></h4>
+									<% else %>
+									   <li class="lead">Sign in with:</li>
+										 <li><%=link_to "Facebook", "/auth/facebook"%></li>
+									   <li><%=link_to "Twitter", "/auth/twitter"%></li>
+								 	   <li><%=link_to "Google", "/auth/google"%></li>
+									<%end%>
+								</ul>
+									
+					
+                  <div class="hidden-phone hidden-tablet">
 									  <div class=  "dropdown">
 											  <% if current_user%>
-											 <h4 id="user-name"><%= current_user.name %> <%=link_to 'signout', 'signout'%></h4>
+											 <h4 id="user-name"><%= current_user.name %> <%=link_to 'signout', :signout%></h4>
 												<% else %>
-									  <a class="dropdown-toggle btn" data-toggle="dropdown" data-target="dropdown-menu">Sign in</a>
-												<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-											    <li><%=link_to "Facebook", "/auth/facebook"%></li>
-											    <li><%=link_to "Twitter", "/auth/twitter"%></li>
-											    <li><%=link_to "Google", "/auth/google"%></li>
-										    </ul>
+							         <a class="dropdown-toggle btn" data-toggle="dropdown" data-target="dropdown-menu">Sign in</a>
+													<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+												    <li><%=link_to "Facebook", "/auth/facebook"%></li>
+												    <li><%=link_to "Twitter", "/auth/twitter"%></li>
+												    <li><%=link_to "Google", "/auth/google"%></li>
+											    </ul>
 										  <%end%>
 										</div>
+									</div>
 							</div><!--/.container-fluid.nav-collapse -->
 					  </div> <!--.container-fluid -->
 		      </div> <!-- .navbar-inner -->
@@ -76,12 +89,6 @@
 				</div>
 		   <%= yield %>
 		  </div>
-		  <div  class="container-fixed">
-			  <div class="hidden-phone hidden-tablet">
-			  	<div id= "roof">
-					  <%=image_tag "rooftop.png"  %>
-					</div>
-				</div>
-		  </div>
+		
 	 </body>
 </html>

@@ -1,7 +1,5 @@
-.well#contact-form {width: auto;
-                    padding-top: 10%;
-                    
-                    text-align:center;}
+.well#contact-form { text-align:center;
+                    }
        				
                     
                   	
@@ -9,13 +7,17 @@ input#customer_name {width:auto;}
 input#customer_email{width:auto;}                
 
 
-textarea#customer_description {width: auto;
-                                height: 200px;}
+textarea#customer_description {
+                               height: 200px;
+                               }
 
 
 #roof { margin-top: 8%;
         width: 3000px;
-        height:100%;
+        height:auto;
         overflow: scroll;
         position: fixed;
 }
+
+
+

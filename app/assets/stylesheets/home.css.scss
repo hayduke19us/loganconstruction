@@ -2,6 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com
 
+a.btn.btn-navbar {background-color: rgb(255,255,255);}
+
+li.lead {color:white;}
+
+li {padding:3px;}
+
+ul.hidden-desktop {list-style-type: none;
+                   padding: 0px;
+                   margin-left: 16px;}
+
 .dropdown{float:right;
           margin-right: 8%;}
 
@@ -11,19 +21,19 @@
 
 .navbar-inverse .nav > li {color:#E5E5E5;}
 
-.notice {padding-top:5%;}
+.notice {padding-top:5%;
+         width:100%;}
 
 .alert.fade.in.alert-success { background-color:white;
                                border-color: white;
 															 margin-left:1%;
                                
                                color: rgb(135,135,135);
-                               width: 600px;
+                             
                                }
 
 
-							
-ul.nav li {;}
+
 
 h4#user-name{color:white;}
 
